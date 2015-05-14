@@ -63,6 +63,8 @@
             line-height: 1.4;
             clear: both;
             margin: 0.5em 0;
+            width: 600px;
+            text-align: center
         }
         u {
             color: #4584EE;
@@ -77,17 +79,17 @@
             position: absolute;
             width: 480px;
             height: 282px;
-            top: 50px;
+            top: 0px;
             left: 50%;
             margin: 0 0 0 -240px;
         }
         .laptop img:first-child {
             position: absolute;
             width: 390px;
-            height: 250px;
-            top: 13px;
+            height: auto;
+            top: -10px;
             left: 46px;
-            z-index: 1;
+            z-index: 101;
         }
         .blob {
             position: absolute;
@@ -122,6 +124,7 @@
             margin: 2em auto;
             max-width: 700px;
             height: 32px;
+            z-index: 5;
         }
         form img.google {
             float: left;
@@ -156,19 +159,37 @@
   </head>
   <body>
 
-    <h1><em>Urun Rembug Jogja</em> #9Renaisans</h1>
-    <h2>"Portrait and Landscape version Enable!" &mdash; @faridiot</h2>
+    <h1><em>GitHub Repository</em> HTML Preview</h1>
+    <h2>"Just paste url HTML repository, and action!" &mdash; @IDWEBDesigner</h2>
+      <div align="center">
+      <p>GitHub Repository HTML Preview allows you to render those files without cloning or downloading whole repositories. It is a client-side solution and does not involve any third party hosting servers.
 
+If you try to open raw versions of any HTML, CSS or JS files in a web browser directly from GitHub, all you will see are sources. GitHub forces them to use the "text/plain" content-type, so they cannot be interpreted. This script overrides it by using Yahoo! Query Language.</p>
+      </div>
 
+   <div class="illustration">
+      <div class="blob bookmark1">
+        <img src="assets/class-act.png" alt="Bookmark example" width="100%">
+      </div>
+
+      <div class="blob bookmark2">
+        <img src="assets/heisencat.png" alt="Bookmark example" width="100%">
+      </div>
+
+      <div class="laptop">
+        <img src="assets/filmtocat.png" alt="Preview of the bookmark manager">
+      </div>
+    </div>
+      <br/>
 	<form id="previewform" action="">
-        <img class="google" src="assets/google.svg" alt="Google" width="103" height="35">
+        <img class="google" src="assets/github_logo.png" style="padding-top:5px" alt="GitHub" width="103" height="auto">
 		<input type="text" id="file" value="" placeholder="e.g. https://github.com/user/repo/blob/master/index.html" size="70"> <button type="submit" value="&raquo;"><img src="assets/search_icon.png" alt="Search" width="15" height="15"></button>
 	</form>
 	<script src="/htmlpreview.min.js"></script>
 	<script>HTMLPreview.init();</script>
 
     <footer>
-      <img src="assets/github_logo.png" alt="designer.web.id" width="auto" height="35">
+      <img src="assets/idwebdesigner.jpg" alt="designer.web.id" width="auto" height="35">
     </footer>
   
   </body></html>
