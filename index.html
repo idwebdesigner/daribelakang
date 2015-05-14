@@ -1,59 +1,174 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>GitHub &amp; BitBucket HTML Preview</title>
-	<style>
-	body {
-		font: 13px Helvetica, arial, freesans, clean, sans-serif;
-		color: #333;
-	}
-	h1 {
-		font-size: 24px;
-	}
-	a {
-		color: #666;
-	}
-	form {
-		padding: 20px; 
-		text-align: center;
-	}
-	strong {
-		color: #333;
-		background-color: #FAFFA6;
-		padding: 0.1em;
-	}
-	#footer {
-		margin: 20px 0;
-		font-size: 10px;
-		color: #666;
-	}
-	</style>
-</head>
-<body>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link href="assets/css" rel="stylesheet" type="text/css">
+    <title>IDWEBDesigner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+            background-color:#f4f6f8;
+            background-image: linear-gradient(-180deg, #fcfcfd 50%, #f4f6f8 100%);
+            background-repeat: no-repeat;
+        }
+        body {
+            font-family: "Source Sans Pro", HelveticaNeue, SegoeUI, Helvetica, Arial, sans-serif;
+            text-align: center;
+            padding: 2em 3em 1em 3em;
+            font-size: 12px;
+            margin: 0 auto;
+            color: #333;
+        }
+        a {
+            color: #4584EE;
+        }
+        h1 {
+            font-weight: 200;
+            font-size: 3em;
+            color: #4D4D4D;
+            line-height: 1;
+            margin: 0.2em 0;
+            padding: 1.4em 0 0 0;
+            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/heart_logo.svg") no-repeat center top;
+            background-size: 1.4em;
+        }
+        h1 em {
+            color: #C50F25;
+            font-weight: 400;
+            font-style: normal;
+        }
+        h2 {
+            font-weight: 700;
+            font-size: 1.3em;
+            color: #000000;
+        }
+        h3 {
+            font-size: 11px;
+            line-height: 1.5;
+            padding: 3px 6px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow : hidden;
+            text-overflow: ellipsis;
+        }
+        p {
+            font-weight: 400;
+            color: #000000;
+            font-size: 1em;
+            line-height: 1.4;
+            clear: both;
+            margin: 0.5em 0;
+        }
+        u {
+            color: #4584EE;
+        }
+        .illustration {
+            height: 340px;
+            position: relative;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+        .laptop {
+            position: absolute;
+            width: 480px;
+            height: 282px;
+            top: 50px;
+            left: 50%;
+            margin: 0 0 0 -240px;
+        }
+        .laptop img:first-child {
+            position: absolute;
+            width: 390px;
+            height: 250px;
+            top: 13px;
+            left: 46px;
+            z-index: 1;
+        }
+        .blob {
+            position: absolute;
+            box-sizing: border-box;
+            text-align: right;
+            width: 175px;
+            height: 240px;
+            top: 30px;
+            z-index: 2;
+        }
+        .panel {
+            background: #fff;
+            box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 4px rgba(0,0,0,0.1);
+            border-radius: 4px;
+            padding: 3px;
+            text-align: left;
+        }
+        .panel img {
+            max-width: 100%;
+            height: auto;
+        }
+        .bookmark1 {
+            left: 30px;
+            top: 30px;
+            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/arrow_left.svg") right bottom no-repeat;
+        }
+        .bookmark2 {
+            right: 30px;
+            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/arrow_right.svg") left bottom no-repeat;
+        }
+        form {
+            margin: 2em auto;
+            max-width: 700px;
+            height: 32px;
+        }
+        form img.google {
+            float: left;
+        }
+        form input[type=text] {
+            font-size: 14px;
+            border: 1px solid #b3b3b3;
+            border-radius: 2px 0 0 2px;
+            padding: 0 10px;
+            margin: 0 0 0 10px;
+            height: 30px;
+            width: calc(100% - 190px);
+            -webkit-appearance: none;
+            float: left;
+        }
+        form button {
+            height: 32px;
+            color: #fff;
+            font-size: 1em;
+            line-height: 30px;
+            padding: 3px 17px 0 17px;
+            margin: 0;
+            border: none;
+            border-radius: 0 2px 2px 0;
+            background-color: #498bf4;
+            float: left;
+        }
+        footer {
+            height: 90px;
+        }
+    </style>
+  </head>
+  <body>
+
+    <h1><em>Urun Rembug Jogja</em> #9Renaisans</h1>
+    <h2>"Portrait and Landscape version Enable!" &mdash; @faridiot</h2>
+
+
 	<form id="previewform" action="">
-		<h1>GitHub &amp; BitBucket HTML Preview</h1>
-		<p><script type="text/javascript"><!--
-		google_ad_client="pub-4887626881270770";
-		google_ad_host="pub-6693688277674466";
-		google_ad_width=728;
-		google_ad_height=90;
-		google_ad_format="728x90_as";
-		google_ad_type="text_image";
-		google_color_border="FFFFFF";
-		google_color_bg="FFFFFF";
-		google_color_link="3366CC";
-		google_color_url="3366CC";
-		google_color_text="333333";
-		google_font_face="arial";
-		//--></script>
-		<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></p>
-		<p>Enter the HTML file to preview: <input type="url" id="file" value="" placeholder="e.g. https://github.com/user/repo/blob/master/index.html" size="70"> <input type="submit" value="&raquo;"></p>
-		<p>or prepend to the URL: <strong>http://htmlpreview.github.io/?</strong>https://raw.github.com/twbs/bootstrap/gh-pages/2.3.2/index.html</p>
-		<p>or use this bookmarklet while browsing GitHub or BitBucket: <a href="javascript:void('http://htmlpreview.github.io/'==window.location?alert('Drag me to your bookmarks bar!'):window.location='http://htmlpreview.github.io/?'+window.location)"><strong>HTMLPreview</strong></a></p>
-		<p id="footer">Developed by <a href="https://github.com/niutech">niu tech</a> | Contribute on <a href="https://github.com/htmlpreview/htmlpreview.github.com">GitHub</a></p>
+        <img class="google" src="assets/google.svg" alt="Google" width="103" height="35">
+		<input type="text" id="file" value="" placeholder="e.g. https://github.com/user/repo/blob/master/index.html" size="70"> <button type="submit" value="&raquo;"><img src="assets/search_icon.png" alt="Search" width="15" height="15"></button>
 	</form>
 	<script src="/htmlpreview.min.js"></script>
 	<script>HTMLPreview.init();</script>
-</body>
-</html>
+
+    <footer>
+      <img src="assets/github_logo.png" alt="designer.web.id" width="auto" height="35">
+    </footer>
+  
+  </body></html>
