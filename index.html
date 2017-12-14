@@ -1,195 +1,36 @@
 <!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>IDWEBDesigner Yogyakarta</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="IDWEBDesigner" />
+        <meta name="keywords" content="web design, web development, freelance, css, html, css3, html5, javascript, jquery" />
+        <meta name="author" content="IDWEBDesigner" />
+        <link rel="shortcut icon" href="favicon.ico">
+        <link href='http://fonts.googleapis.com/css?family=Chivo' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <a href="http://designer.web.id">
+			<div class="logo">
+			</div>
+            </a>
+			<p class="copyright">
+				<span>designer.web.id is getting makeover<br/><a href="http://ekspedisicandi.com">Go to ekspedisicandi.com</a></span>
+			</p>
+        </div>
+    </body>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <link href="assets/css" rel="stylesheet" type="text/css">
-    <title>GitHub Repository HTML Preview</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-        html {
-            height: 100%;
-            background-color:#f4f6f8;
-            background-image: linear-gradient(-180deg, #fcfcfd 50%, #f4f6f8 100%);
-            background-repeat: no-repeat;
-        }
-        body {
-            font-family: "Source Sans Pro", HelveticaNeue, SegoeUI, Helvetica, Arial, sans-serif;
-            text-align: center;
-            padding: 2em 3em 1em 3em;
-            font-size: 12px;
-            margin: 0 auto;
-            color: #333;
-        }
-        a {
-            color: #4584EE;
-        }
-        h1 {
-            font-weight: 200;
-            font-size: 3em;
-            color: #4D4D4D;
-            line-height: 1;
-            margin: 0.2em 0;
-            padding: 1.4em 0 0 0;
-            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/heart_logo.svg") no-repeat center top;
-            background-size: 1.4em;
-        }
-        h1 em {
-            color: #C50F25;
-            font-weight: 400;
-            font-style: normal;
-        }
-        h2 {
-            font-weight: 700;
-            font-size: 1.3em;
-            color: #000000;
-        }
-        h3 {
-            font-size: 11px;
-            line-height: 1.5;
-            padding: 3px 6px;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 2;
-            overflow : hidden;
-            text-overflow: ellipsis;
-        }
-        p {
-            font-weight: 400;
-            color: #000000;
-            font-size: 1em;
-            line-height: 1.4;
-            clear: both;
-            margin: 0.5em 0;
-            width: 600px;
-            text-align: center
-        }
-        u {
-            color: #4584EE;
-        }
-        .illustration {
-            height: 340px;
-            position: relative;
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        .laptop {
-            position: absolute;
-            width: 480px;
-            height: 282px;
-            top: 0px;
-            left: 50%;
-            margin: 0 0 0 -240px;
-        }
-        .laptop img:first-child {
-            position: absolute;
-            width: 390px;
-            height: auto;
-            top: -10px;
-            left: 46px;
-            z-index: 101;
-        }
-        .blob {
-            position: absolute;
-            box-sizing: border-box;
-            text-align: right;
-            width: 175px;
-            height: 240px;
-            top: 30px;
-            z-index: 2;
-        }
-        .panel {
-            background: #fff;
-            box-shadow: 0 0 1px rgba(0,0,0,0.1), 0 1px 4px rgba(0,0,0,0.1);
-            border-radius: 4px;
-            padding: 3px;
-            text-align: left;
-        }
-        .panel img {
-            max-width: 100%;
-            height: auto;
-        }
-        .bookmark1 {
-            left: 30px;
-            top: 30px;
-            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/arrow_left.svg") right bottom no-repeat;
-        }
-        .bookmark2 {
-            right: 30px;
-            background: url("/extension/opera/design/opera/static/o/welcome-upgrade/arrow_right.svg") left bottom no-repeat;
-        }
-        form {
-            margin: 2em auto;
-            max-width: 700px;
-            height: 32px;
-            z-index: 5;
-        }
-        form img.google {
-            float: left;
-        }
-        form input[type=text] {
-            font-size: 14px;
-            border: 1px solid #b3b3b3;
-            border-radius: 2px 0 0 2px;
-            padding: 0 10px;
-            margin: 0 0 0 10px;
-            height: 30px;
-            width: calc(100% - 190px);
-            -webkit-appearance: none;
-            float: left;
-        }
-        form button {
-            height: 32px;
-            color: #fff;
-            font-size: 1em;
-            line-height: 30px;
-            padding: 3px 17px 0 17px;
-            margin: 0;
-            border: none;
-            border-radius: 0 2px 2px 0;
-            background-color: #498bf4;
-            float: left;
-        }
-        footer {
-            height: 90px;
-        }
-    </style>
-  </head>
-  <body>
+  ga('create', 'UA-77406292-1', 'auto');
+  ga('send', 'pageview');
 
-    <h1><em>GitHub Repository</em> HTML Preview</h1>
-    <h2>"Just paste url HTML repository, and action!" &mdash; @IDWEBDesigner</h2>
-      <div align="center">
-      <p>GitHub Repository HTML Preview allows you to render those files without cloning or downloading whole repositories. It is a client-side solution and does not involve any third party hosting servers.
-
-If you try to open raw versions of any HTML, CSS or JS files in a web browser directly from GitHub, all you will see are sources. GitHub forces them to use the "text/plain" content-type, so they cannot be interpreted. This script overrides it by using Yahoo! Query Language.</p>
-      </div>
-
-   <div class="illustration">
-      <div class="blob bookmark1">
-        <img src="assets/class-act.png" alt="Bookmark example" width="100%">
-      </div>
-
-      <div class="blob bookmark2">
-        <img src="assets/heisencat.png" alt="Bookmark example" width="100%">
-      </div>
-
-      <div class="laptop">
-        <img src="assets/filmtocat.png" alt="Preview of the bookmark manager">
-      </div>
-    </div>
-      <br/>
-	<form id="previewform" action="">
-        <img class="google" src="assets/github_logo.png" style="padding-top:5px" alt="GitHub" width="103" height="auto">
-		<input type="text" id="file" value="" placeholder="e.g. https://github.com/user/repo/blob/master/index.html" size="70"> <button type="submit" value="&raquo;"><img src="assets/search_icon.png" alt="Search" width="15" height="15"></button>
-	</form>
-	<script src="/htmlpreview.min.js"></script>
-	<script>HTMLPreview.init();</script>
-
-    <footer>
-      <img src="assets/idwebdesigner.jpg" alt="designer.web.id" width="auto" height="35">
-    </footer>
-  
-  </body></html>
+</script>
+</html>
